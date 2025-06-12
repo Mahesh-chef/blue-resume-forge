@@ -4,14 +4,14 @@
 
 @layer base {
   :root {
-    --background: 247 250 252;         /* #F7FAFC - very light gray */
-    --foreground: 26 32 44;            /* #1A202C - almost black */
+    --background: 255 255 255;         /* #FFFFFF - pure white */
+    --foreground: 17 24 39;            /* #111827 - deep slate gray, nearly black */
 
     --card: 255 255 255;               /* #FFFFFF */
-    --card-foreground: 26 32 44;       /* #1A202C */
+    --card-foreground: 17 24 39;       /* #111827 */
 
     --popover: 255 255 255;
-    --popover-foreground: 26 32 44;
+    --popover-foreground: 17 24 39;
 
     --primary: 37 99 235;              /* #2563EB */
     --primary-foreground: 255 255 255; /* #FFFFFF */
@@ -19,8 +19,8 @@
     --secondary: 124 58 237;           /* #7C3AED */
     --secondary-foreground: 255 255 255;
 
-    --muted: 229 231 235;              /* #E5E7EB */
-    --muted-foreground: 74 85 104;     /* #4A5568 */
+    --muted: 243 244 246;              /* #F3F4F6 - light gray */
+    --muted-foreground: 75 85 99;      /* #4B5563 - dark gray */
 
     --accent: 16 185 129;              /* #10B981 */
     --accent-foreground: 255 255 255;
@@ -33,29 +33,33 @@
   }
 
   .dark {
-    --background: 26 32 44;            /* #1A202C - dark background */
-    --foreground: 247 250 252;         /* #F7FAFC - light text */
+    --background: 17 24 39;            /* #111827 - deep slate gray */
+    --foreground: 255 255 255;         /* #FFFFFF - white */
 
     --card: 30 41 59;                  /* #1E293B */
-    --card-foreground: 247 250 252;
+    --card-foreground: 255 255 255;
 
     --popover: 30 41 59;
-    --popover-foreground: 247 250 252;
+    --popover-foreground: 255 255 255;
 
     --primary: 59 130 246;             /* #3B82F6 */
-    --primary-foreground: 26 32 44;
+    --primary-foreground: 17 24 39;
 
     --secondary: 139 92 246;           /* #8B5CF6 */
-    --secondary-foreground: 26 32 44;
+    --secondary-foreground: 17 24 39;
 
-    --muted: 55 65 81;                 /* #374151 */
-    --muted-foreground: 156 163 175;   /* #9CA3AF */
+    --muted: 31 41 55;                 /* #1F2937 */
+    --muted-foreground: 203 213 225;   /* #CBD5E1 */
 
     --accent: 52 211 153;              /* #34D399 */
-    --accent-foreground: 26 32 44;
+    --accent-foreground: 17 24 39;
 
     --border: 55 65 81;                /* #374151 */
     --input: 55 65 81;
     --ring: 59 130 246;                /* #3B82F6 */
   }
 }
+
+   
+
+ 
