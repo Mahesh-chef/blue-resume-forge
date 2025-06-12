@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "homepage": "https://mahesh-chef.github.io/blue-resume-forge/"
+    "homepage": "https://mahesh-chef.github.io/blue-resume-forge/",
      "predeploy": "npm run build",
   "deploy": "gh-pages -d dist",
 
