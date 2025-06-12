@@ -8,25 +8,25 @@
 @layer base {
   :root {
     --background: 254 253 247; /* #FFFDF7 off-white */
-    --foreground: 34 40 49; /* #222831 dark slate */
+    --foreground: 0 0 0; /* #000000 pure black for maximum contrast */
 
     --card: 255 255 255;
-    --card-foreground: 34 40 49;
+    --card-foreground: 0 0 0; /* #000000 pure black */
 
     --popover: 255 255 255;
-    --popover-foreground: 34 40 49;
+    --popover-foreground: 0 0 0; /* #000000 pure black */
 
     --primary: 0 128 128; /* #008080 deep teal */
     --primary-foreground: 254 253 247;
 
     --secondary: 255 112 67; /* #FF7043 sunset orange */
-    --secondary-foreground: 34 40 49;
+    --secondary-foreground: 0 0 0; /* #000000 pure black */
 
     --muted: 249 246 242; /* #F9F6F2 light beige */
-    --muted-foreground: 100 116 139;
+    --muted-foreground: 17 17 17; /* #111111 very dark gray */
 
     --accent: 255 209 220; /* #FFD1DC soft pink */
-    --accent-foreground: 34 40 49;
+    --accent-foreground: 0 0 0; /* #000000 pure black */
 
     --destructive: 239 68 68;
     --destructive-foreground: 254 253 247;
