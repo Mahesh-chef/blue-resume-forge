@@ -21,11 +21,11 @@ const Footer = () => {
             </button>
 
             {/* Logo/Name */}
-            <h3 className="text-2xl font-bold mb-4">Your Name</h3>
+            <h3 className="text-2xl font-bold mb-4">Maheshwar Vardolu</h3>
             
             {/* Tagline */}
             <p className="text-blue-200 mb-8 max-w-md mx-auto">
-              Building digital experiences that make a difference, one project at a time.
+              Passionate Chef | Cooking with Heart, Leading with Soul
             </p>
 
             {/* Quick Links */}
@@ -44,9 +44,9 @@ const Footer = () => {
             {/* Copyright */}
             <div className="border-t border-blue-800 pt-8">
               <p className="text-blue-300 flex items-center justify-center">
-                © 2024 Your Name. Made with 
+                © 2024 Maheshwar Vardolu. Crafted with 
                 <Heart className="h-4 w-4 mx-1 text-red-500" />
-                and React
+                and passion for culinary excellence
               </p>
             </div>
           </div>

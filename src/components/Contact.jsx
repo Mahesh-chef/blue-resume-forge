@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Send } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,41 +21,29 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      link: "mailto:your.email@example.com"
-    },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "mahesh.vardolu789@gmail.com",
+      link: "mailto:mahesh.vardolu789@gmail.com"
     },
     {
       icon: MapPin,
-      label: "Location",
-      value: "San Francisco, CA",
+      label: "Current Location",
+      value: "Oklahoma City, Oklahoma, United States",
+      link: "#"
+    },
+    {
+      icon: MapPin,
+      label: "Work Location",
+      value: "Snowmass Village, Colorado, United States",
       link: "#"
     }
   ];
 
   const socialLinks = [
     {
-      icon: Github,
-      label: "GitHub",
-      url: "https://github.com/yourusername",
-      color: "hover:text-gray-900"
-    },
-    {
       icon: Linkedin,
       label: "LinkedIn",
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://linkedin.com/in/maheshwarvardolu-769b18139",
       color: "hover:text-blue-600"
-    },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      url: "https://twitter.com/yourusername",
-      color: "hover:text-blue-400"
     }
   ];
 
@@ -89,10 +77,11 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Let's Connect</h2>
             <div className="w-24 h-1 bg-blue-300 mx-auto mb-6"></div>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Ready to start your next project? Let's discuss how we can work together to bring your ideas to life.
+              Ready to discuss culinary opportunities or collaborate on your next dining experience? 
+              Let's create something amazing together.
             </p>
           </div>
 
@@ -148,7 +137,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       className="bg-white/10 border-blue-300/30 text-white placeholder:text-blue-200"
-                      placeholder="Project Discussion"
+                      placeholder="Culinary Opportunity Discussion"
                     />
                   </div>
 
@@ -164,7 +153,7 @@ const Contact = () => {
                       required
                       rows={6}
                       className="bg-white/10 border-blue-300/30 text-white placeholder:text-blue-200 resize-none"
-                      placeholder="Tell me about your project..."
+                      placeholder="Tell me about your culinary project or opportunity..."
                     />
                   </div>
 
@@ -189,11 +178,12 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
+                <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
                 <p className="text-blue-100 text-lg leading-relaxed mb-8">
-                  I'm always excited to discuss new opportunities, innovative projects, 
-                  or just chat about technology. Feel free to reach out through any of 
-                  the channels below.
+                  I'm always excited to discuss new culinary opportunities, innovative projects, 
+                  or collaborate on creating exceptional dining experiences. Whether you're looking 
+                  for a passionate chef to join your team or want to discuss culinary consulting, 
+                  I'm here to help.
                 </p>
               </div>
 
@@ -218,7 +208,7 @@ const Contact = () => {
 
               {/* Social Links */}
               <div>
-                <h4 className="text-xl font-semibold mb-4">Follow Me</h4>
+                <h4 className="text-xl font-semibold mb-4">Connect with Me</h4>
                 <div className="flex space-x-4">
                   {socialLinks.map((social, index) => (
                     <a
@@ -240,10 +230,25 @@ const Contact = () => {
                   <div className="flex items-center">
                     <div className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></div>
                     <div>
-                      <p className="font-medium">Available for new projects</p>
-                      <p className="text-sm text-blue-200">Typically responds within 24 hours</p>
+                      <p className="font-medium">Open to new opportunities</p>
+                      <p className="text-sm text-blue-200">Currently serving at Viewline Resort Snowmass</p>
                     </div>
                   </div>
+                </CardContent>
+              </Card>
+
+              {/* Professional Quote */}
+              <Card className="bg-blue-800/50 border-blue-600/30">
+                <CardContent className="p-6">
+                  <blockquote className="text-center">
+                    <p className="text-blue-100 italic mb-4">
+                      "I am able to work under pressure, adapt quickly to the requirements of the business. 
+                      As a hardworking and results oriented individual who takes pride in her work..."
+                    </p>
+                    <footer className="text-sm text-blue-300 font-medium">
+                      Professional Philosophy
+                    </footer>
+                  </blockquote>
                 </CardContent>
               </Card>
             </div>

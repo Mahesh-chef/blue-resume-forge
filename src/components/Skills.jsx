@@ -3,76 +3,82 @@ import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { Code2, Database, Palette, Settings, GraduationCap, Award } from 'lucide-react';
+import { ChefHat, Utensils, Users, Settings, GraduationCap, Award } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
     {
-      icon: Code2,
-      title: "Frontend Development",
+      icon: ChefHat,
+      title: "Culinary Expertise",
       skills: [
-        { name: "React", level: 90 },
-        { name: "JavaScript/ES6+", level: 95 },
-        { name: "HTML5/CSS3", level: 90 },
-        { name: "Tailwind CSS", level: 85 },
-        { name: "Vue.js", level: 75 }
+        { name: "Food Preparation", level: 95 },
+        { name: "Fusion Cuisine", level: 90 },
+        { name: "Kitchen Operations", level: 90 },
+        { name: "Menu Development", level: 85 },
+        { name: "Food Safety & Hygiene", level: 95 }
       ]
     },
     {
-      icon: Database,
-      title: "Backend Development",
+      icon: Utensils,
+      title: "Food & Beverage Operations",
       skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Express.js", level: 80 },
-        { name: "PostgreSQL", level: 75 },
-        { name: "MongoDB", level: 70 },
-        { name: "REST APIs", level: 90 }
+        { name: "High-Volume Cooking", level: 90 },
+        { name: "Beverage Pairing", level: 75 },
+        { name: "Cost Control", level: 80 },
+        { name: "Inventory Management", level: 85 },
+        { name: "Quality Assurance", level: 90 }
+      ]
+    },
+    {
+      icon: Users,
+      title: "Leadership & Management",
+      skills: [
+        { name: "Team Leadership", level: 85 },
+        { name: "Kitchen Management", level: 90 },
+        { name: "Staff Training", level: 85 },
+        { name: "Communication", level: 90 },
+        { name: "Problem Solving", level: 85 }
       ]
     },
     {
       icon: Settings,
-      title: "Tools & Technologies",
+      title: "Hotel & Restaurant Operations",
       skills: [
-        { name: "Git/GitHub", level: 90 },
-        { name: "Docker", level: 70 },
-        { name: "AWS", level: 65 },
-        { name: "Webpack", level: 75 },
-        { name: "Jest", level: 80 }
-      ]
-    },
-    {
-      icon: Palette,
-      title: "Design & UX",
-      skills: [
-        { name: "Figma", level: 80 },
-        { name: "Adobe XD", level: 75 },
-        { name: "UI/UX Design", level: 85 },
-        { name: "Responsive Design", level: 95 },
-        { name: "Prototyping", level: 80 }
+        { name: "Hotel Management", level: 85 },
+        { name: "Customer Service", level: 95 },
+        { name: "Operations Management", level: 80 },
+        { name: "POS Systems", level: 75 },
+        { name: "Vendor Relations", level: 80 }
       ]
     }
   ];
 
   const education = [
     {
-      degree: "Bachelor of Computer Science",
-      institution: "University Name",
-      year: "2019",
-      description: "Specialized in Software Engineering and Web Development"
+      degree: "Bachelor of Hotel Management",
+      institution: "Osmania University, Hyderabad",
+      year: "2014 - 2017",
+      description: "Specialized in Hotel, Motel, and Restaurant Management with comprehensive training in hospitality operations"
     },
     {
-      degree: "Full Stack Web Development Bootcamp",
-      institution: "Coding Academy",
-      year: "2018",
-      description: "Intensive 6-month program covering modern web technologies"
+      degree: "Hotel Management Certification",
+      institution: "WESTIN COLLEGE OF HOTEL MANAGEMENT",
+      year: "2014 - 2017",
+      description: "Professional certification program focusing on industry best practices"
+    },
+    {
+      degree: "Bachelor's Degree",
+      institution: "Osmania University, Department of Business Management",
+      year: "2017 - 2019",
+      description: "Additional business management education to complement hospitality expertise"
     }
   ];
 
   const certifications = [
-    "AWS Cloud Practitioner",
-    "Google Analytics Certified",
-    "Scrum Master Certified",
-    "MongoDB Developer"
+    "Food Safety Certification",
+    "Kitchen Management Certification",
+    "Hospitality Leadership Certificate",
+    "International Cuisine Specialization"
   ];
 
   return (
@@ -84,7 +90,7 @@ const Skills = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">Skills & Education</h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Continuously evolving skill set backed by solid education and hands-on experience
+              A comprehensive skill set built through education, hands-on experience, and continuous learning
             </p>
           </div>
 
@@ -166,20 +172,34 @@ const Skills = () => {
                 ))}
               </div>
 
-              {/* Additional Skills Tags */}
+              {/* Professional Strengths */}
               <div className="mt-8">
-                <h4 className="text-lg font-semibold text-foreground mb-4">Additional Skills</h4>
+                <h4 className="text-lg font-semibold text-foreground mb-4">Professional Strengths</h4>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    "Agile/Scrum", "Team Leadership", "Code Review", "Mentoring", 
-                    "Project Management", "Technical Writing", "API Design", "Performance Optimization"
-                  ].map((skill, index) => (
+                    "Pressure Management", "Team Leadership", "Customer Service Excellence", "Cultural Adaptability", 
+                    "Multilingual Communication", "Innovation & Creativity", "Process Optimization", "Quality Control"
+                  ].map((strength, index) => (
                     <Badge key={index} variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
-                      {skill}
+                      {strength}
                     </Badge>
                   ))}
                 </div>
               </div>
+
+              {/* Quote */}
+              <Card className="mt-8 bg-blue-50 border-blue-200">
+                <CardContent className="p-6">
+                  <blockquote className="text-center">
+                    <p className="text-muted-foreground italic mb-4">
+                      "Learning by doing: my internship gave me more than just experience—it gave me clarity."
+                    </p>
+                    <footer className="text-sm text-primary font-medium">
+                      - Maheshwar Vardolu
+                    </footer>
+                  </blockquote>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>

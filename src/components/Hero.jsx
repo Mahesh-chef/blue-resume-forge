@@ -21,20 +21,27 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Profile Image Placeholder */}
-          <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-blue-gradient shadow-xl animate-fade-in"></div>
+          {/* Profile Image */}
+          <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-xl animate-fade-in">
+            <img 
+              src="https://images.unsplash.com/photo-1583394293214-28a5b18962c4?w=400&h=400&fit=crop&crop=face" 
+              alt="Maheshwar Vardolu - Professional Chef"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
           {/* Main Content */}
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="text-gradient">Your Name</span>
+              <span className="text-gradient">Maheshwar Vardolu</span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-blue-700 mb-6 font-medium">
-              Full Stack Developer & Designer
+              Passionate Chef | Cooking with Heart, Leading with Soul
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-              Passionate about creating beautiful, functional digital experiences that make a difference. 
-              Specializing in modern web technologies and user-centered design.
+              Specializing in Fusion Cuisine & Kitchen Operations with experience across luxury resorts 
+              and boutique establishments. Currently serving as Lead Line Cook at Viewline Resort Snowmass, 
+              Autograph Collection in Colorado.
             </p>
           </div>
 
@@ -51,13 +58,10 @@ const Hero = () => {
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-200 p-2">
-              <Github size={24} />
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-200 p-2">
+            <a href="https://linkedin.com/in/maheshwarvardolu-769b18139" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors duration-200 p-2">
               <Linkedin size={24} />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors duration-200 p-2">
+            <a href="mailto:mahesh.vardolu789@gmail.com" className="text-muted-foreground hover:text-primary transition-colors duration-200 p-2">
               <Mail size={24} />
             </a>
           </div>

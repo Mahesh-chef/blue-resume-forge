@@ -1,29 +1,29 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Code, Palette, Zap, Users } from 'lucide-react';
+import { ChefHat, Users, Award, Zap } from 'lucide-react';
 
 const About = () => {
   const highlights = [
     {
-      icon: Code,
-      title: "Clean Code",
-      description: "Writing maintainable, scalable code that stands the test of time"
-    },
-    {
-      icon: Palette,
-      title: "Design Focus",
-      description: "Creating beautiful interfaces with attention to user experience"
-    },
-    {
-      icon: Zap,
-      title: "Performance",
-      description: "Optimizing applications for speed and efficiency"
+      icon: ChefHat,
+      title: "Culinary Excellence",
+      description: "Mastering fusion cuisine techniques with passion for innovation"
     },
     {
       icon: Users,
-      title: "Collaboration",
-      description: "Working effectively with teams and stakeholders"
+      title: "Team Leadership",
+      description: "Leading kitchen operations and mentoring culinary professionals"
+    },
+    {
+      icon: Award,
+      title: "Quality Service",
+      description: "Delivering exceptional dining experiences in luxury establishments"
+    },
+    {
+      icon: Zap,
+      title: "Adaptability",
+      description: "Thriving under pressure while maintaining high standards"
     }
   ];
 
@@ -36,7 +36,7 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">About Me</h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Driven by curiosity and a passion for innovation, I transform ideas into digital reality
+              A culinary journey driven by passion, creativity, and dedication to excellence
             </p>
           </div>
 
@@ -44,20 +44,22 @@ const About = () => {
             {/* Left Content */}
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-foreground mb-6">
-                Building the future, one line of code at a time
+                Crafting culinary experiences, one dish at a time
               </h3>
               
               <p className="text-muted-foreground leading-relaxed text-lg">
-                With over [X] years of experience in web development, I specialize in creating 
-                robust, scalable applications using modern technologies. My journey began with 
-                a curiosity about how things work, which evolved into a passion for building 
-                solutions that make a real impact.
+                With over 8 years of experience in the culinary industry, I've had the privilege 
+                of working in diverse environments from luxury resorts in Colorado to boutique 
+                establishments in Abu Dhabi. My journey began with a Bachelor's in Hotel Management 
+                from Osmania University, and has evolved through hands-on experience in some of 
+                the most prestigious kitchens.
               </p>
               
               <p className="text-muted-foreground leading-relaxed text-lg">
-                I believe in the power of clean code, thoughtful design, and continuous learning. 
-                When I'm not coding, you'll find me exploring new technologies, contributing to 
-                open source projects, or mentoring fellow developers.
+                As a young professional with expertise in sales and communication, I thrive under 
+                pressure and adapt quickly to business requirements. My experience has taught me 
+                to work effectively with diverse teams while ensuring exceptional customer service. 
+                I embrace new challenges as opportunities for growth and skill enhancement.
               </p>
 
               <div className="pt-4">
@@ -65,19 +67,19 @@ const About = () => {
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                    Creating intuitive user experiences
+                    Creating memorable dining experiences
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                    Solving complex technical challenges
+                    Innovating fusion cuisine techniques
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                    Continuous learning and growth
+                    Leading and mentoring kitchen teams
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                    Building meaningful connections
+                    Continuous learning and development
                   </li>
                 </ul>
               </div>
