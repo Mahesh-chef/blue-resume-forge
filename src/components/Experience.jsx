@@ -86,7 +86,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-white">
+    <section id="experience" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -101,7 +101,7 @@ const Experience = () => {
           {/* Main Experience Timeline */}
           <div className="space-y-8 mb-16">
             {experiences.map((exp, index) => (
-              <Card key={exp.id} className="group hover:shadow-xl transition-all duration-300 border-blue-100 hover:border-primary/20">
+              <Card key={exp.id} className="group hover:shadow-xl transition-all duration-300 border-primary/20 hover:border-primary/40">
                 <CardContent className="p-8">
                   <div className="grid lg:grid-cols-4 gap-6">
                     {/* Image */}
@@ -109,7 +109,7 @@ const Experience = () => {
                       <img 
                         src={exp.image} 
                         alt={`${exp.company} kitchen environment`}
-                        className="w-full h-32 object-cover rounded-lg"
+                        className="w-full h-32 object-cover rounded-lg shadow-md"
                       />
                     </div>
 
@@ -126,11 +126,11 @@ const Experience = () => {
 
                       <div className="grid md:grid-cols-2 gap-4 mb-4 text-sm text-muted-foreground">
                         <div className="flex items-center">
-                          <Calendar className="h-4 w-4 mr-2" />
+                          <Calendar className="h-4 w-4 mr-2 text-secondary" />
                           {exp.duration}
                         </div>
                         <div className="flex items-center">
-                          <MapPin className="h-4 w-4 mr-2" />
+                          <MapPin className="h-4 w-4 mr-2 text-secondary" />
                           {exp.location}
                         </div>
                       </div>
@@ -157,7 +157,7 @@ const Experience = () => {
                         <h4 className="text-lg font-semibold text-foreground mb-2">Key Skills</h4>
                         <div className="flex flex-wrap gap-2">
                           {exp.skills.map((skill, idx) => (
-                            <Badge key={idx} variant="secondary" className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                            <Badge key={idx} variant="secondary" className="bg-accent text-accent-foreground hover:bg-accent/80">
                               {skill}
                             </Badge>
                           ))}
@@ -175,20 +175,20 @@ const Experience = () => {
             <h3 className="text-2xl font-bold text-foreground mb-6 text-center">Early Career Foundation</h3>
             <div className="grid md:grid-cols-2 gap-6">
               {earlyExperience.map((exp, index) => (
-                <Card key={index} className="border-blue-100 hover:shadow-md transition-all duration-300">
+                <Card key={index} className="border-primary/20 hover:shadow-md transition-all duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-center mb-3">
-                      <Award className="h-5 w-5 text-primary mr-2" />
+                      <Award className="h-5 w-5 text-secondary mr-2" />
                       <h4 className="text-lg font-semibold text-foreground">{exp.company}</h4>
                     </div>
                     <p className="text-primary font-medium mb-2">{exp.position}</p>
                     <div className="text-sm text-muted-foreground mb-2">
                       <div className="flex items-center mb-1">
-                        <Calendar className="h-3 w-3 mr-2" />
+                        <Calendar className="h-3 w-3 mr-2 text-secondary" />
                         {exp.duration}
                       </div>
                       <div className="flex items-center">
-                        <MapPin className="h-3 w-3 mr-2" />
+                        <MapPin className="h-3 w-3 mr-2 text-secondary" />
                         {exp.location}
                       </div>
                     </div>

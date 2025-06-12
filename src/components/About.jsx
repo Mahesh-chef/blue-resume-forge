@@ -28,7 +28,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-white to-blue-50">
+    <section id="about" className="py-20 bg-gradient-to-br from-background to-muted">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -70,7 +70,7 @@ const About = () => {
                     Creating memorable dining experiences
                   </li>
                   <li className="flex items-center">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                    <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
                     Innovating fusion cuisine techniques
                   </li>
                   <li className="flex items-center">
@@ -78,19 +78,28 @@ const About = () => {
                     Leading and mentoring kitchen teams
                   </li>
                   <li className="flex items-center">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                    <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
                     Continuous learning and development
                   </li>
                 </ul>
+              </div>
+
+              {/* Professional Image */}
+              <div className="mt-8">
+                <img 
+                  src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop" 
+                  alt="Professional kitchen environment"
+                  className="w-full h-64 object-cover rounded-lg shadow-lg"
+                />
               </div>
             </div>
 
             {/* Right Content - Highlights Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {highlights.map((item, index) => (
-                <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-blue-100 hover:border-primary/20">
+                <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-primary/20 hover:border-primary/40">
                   <CardContent className="p-6 text-center">
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-gradient flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-sunset-gradient flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <item.icon className="h-8 w-8 text-white" />
                     </div>
                     <h4 className="text-lg font-semibold text-foreground mb-2">{item.title}</h4>

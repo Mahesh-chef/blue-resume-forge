@@ -3,73 +3,73 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Monochromatic Blue Design System */
+/* Sunset Orange & Teal Design System */
 
 @layer base {
   :root {
-    --background: 248 250 252; /* slate-50 */
-    --foreground: 15 23 42; /* slate-900 */
+    --background: 254 253 247; /* #FFFDF7 off-white */
+    --foreground: 34 40 49; /* #222831 dark slate */
 
     --card: 255 255 255;
-    --card-foreground: 15 23 42;
+    --card-foreground: 34 40 49;
 
     --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
+    --popover-foreground: 34 40 49;
 
-    --primary: 29 78 216; /* blue-700 */
-    --primary-foreground: 248 250 252;
+    --primary: 0 128 128; /* #008080 deep teal */
+    --primary-foreground: 254 253 247;
 
-    --secondary: 219 234 254; /* blue-100 */
-    --secondary-foreground: 30 64 175; /* blue-800 */
+    --secondary: 255 112 67; /* #FF7043 sunset orange */
+    --secondary-foreground: 34 40 49;
 
-    --muted: 241 245 249; /* slate-100 */
-    --muted-foreground: 100 116 139; /* slate-500 */
+    --muted: 249 246 242; /* #F9F6F2 light beige */
+    --muted-foreground: 100 116 139;
 
-    --accent: 147 197 253; /* blue-300 */
-    --accent-foreground: 30 58 138; /* blue-900 */
+    --accent: 255 209 220; /* #FFD1DC soft pink */
+    --accent-foreground: 34 40 49;
 
     --destructive: 239 68 68;
-    --destructive-foreground: 248 250 252;
+    --destructive-foreground: 254 253 247;
 
-    --border: 226 232 240; /* slate-200 */
+    --border: 226 232 240;
     --input: 226 232 240;
-    --ring: 59 130 246; /* blue-500 */
+    --ring: 0 128 128; /* teal */
 
     --radius: 0.75rem;
 
-    /* Custom blue gradient variables */
-    --blue-gradient: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
-    --blue-light-gradient: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 50%, #93c5fd 100%);
+    /* Custom gradient variables */
+    --sunset-gradient: linear-gradient(135deg, #FF7043 0%, #008080 100%);
+    --teal-gradient: linear-gradient(135deg, #008080 0%, #20B2AA 100%);
   }
 
   .dark {
-    --background: 15 23 42;
-    --foreground: 248 250 252;
+    --background: 34 40 49;
+    --foreground: 254 253 247;
 
-    --card: 30 41 59;
-    --card-foreground: 248 250 252;
+    --card: 51 65 85;
+    --card-foreground: 254 253 247;
 
-    --popover: 30 41 59;
-    --popover-foreground: 248 250 252;
+    --popover: 51 65 85;
+    --popover-foreground: 254 253 247;
 
-    --primary: 59 130 246;
-    --primary-foreground: 15 23 42;
+    --primary: 32 178 170;
+    --primary-foreground: 34 40 49;
 
-    --secondary: 30 58 138;
-    --secondary-foreground: 219 234 254;
+    --secondary: 255 138 101;
+    --secondary-foreground: 34 40 49;
 
-    --muted: 51 65 85;
+    --muted: 71 85 105;
     --muted-foreground: 148 163 184;
 
-    --accent: 30 64 175;
-    --accent-foreground: 219 234 254;
+    --accent: 255 182 193;
+    --accent-foreground: 34 40 49;
 
     --destructive: 239 68 68;
-    --destructive-foreground: 248 250 252;
+    --destructive-foreground: 254 253 247;
 
-    --border: 51 65 85;
-    --input: 51 65 85;
-    --ring: 147 197 253;
+    --border: 71 85 105;
+    --input: 71 85 105;
+    --ring: 32 178 170;
   }
 }
 
@@ -89,15 +89,15 @@
 }
 
 @layer utilities {
-  .bg-blue-gradient {
-    background: var(--blue-gradient);
+  .bg-sunset-gradient {
+    background: var(--sunset-gradient);
   }
   
-  .bg-blue-light-gradient {
-    background: var(--blue-light-gradient);
+  .bg-teal-gradient {
+    background: var(--teal-gradient);
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
   }
 }

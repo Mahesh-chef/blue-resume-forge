@@ -42,8 +42,8 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      url: "https://linkedin.com/in/maheshwarvardolu-769b18139",
-      color: "hover:text-blue-600"
+      url: "https://www.linkedin.com/in/maheshwar-vardolu-769b18139/",
+      color: "hover:text-primary"
     }
   ];
 
@@ -72,14 +72,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-blue-900 to-blue-800 text-white">
+    <section id="contact" className="py-20 bg-gradient-to-br from-primary to-secondary text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Let's Connect</h2>
-            <div className="w-24 h-1 bg-blue-300 mx-auto mb-6"></div>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
+            <p className="text-xl text-white/90 max-w-3xl mx-auto">
               Ready to discuss culinary opportunities or collaborate on your next dining experience? 
               Let's create something amazing together.
             </p>
@@ -87,7 +87,7 @@ const Contact = () => {
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <Card className="bg-white/10 backdrop-blur-md border-blue-400/20">
+            <Card className="bg-white/10 backdrop-blur-md border-white/20">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
                 
@@ -104,7 +104,7 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="bg-white/10 border-blue-300/30 text-white placeholder:text-blue-200"
+                        className="bg-white/10 border-white/30 text-white placeholder:text-white/70"
                         placeholder="John Doe"
                       />
                     </div>
@@ -119,7 +119,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="bg-white/10 border-blue-300/30 text-white placeholder:text-blue-200"
+                        className="bg-white/10 border-white/30 text-white placeholder:text-white/70"
                         placeholder="john@example.com"
                       />
                     </div>
@@ -136,7 +136,7 @@ const Contact = () => {
                       value={formData.subject}
                       onChange={handleInputChange}
                       required
-                      className="bg-white/10 border-blue-300/30 text-white placeholder:text-blue-200"
+                      className="bg-white/10 border-white/30 text-white placeholder:text-white/70"
                       placeholder="Culinary Opportunity Discussion"
                     />
                   </div>
@@ -152,7 +152,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       rows={6}
-                      className="bg-white/10 border-blue-300/30 text-white placeholder:text-blue-200 resize-none"
+                      className="bg-white/10 border-white/30 text-white placeholder:text-white/70 resize-none"
                       placeholder="Tell me about your culinary project or opportunity..."
                     />
                   </div>
@@ -160,7 +160,7 @@ const Contact = () => {
                   <Button 
                     type="submit" 
                     disabled={isSubmitting}
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg"
+                    className="w-full bg-accent hover:bg-accent/90 text-accent-foreground py-3 text-lg transition-all duration-300"
                   >
                     {isSubmitting ? (
                       "Sending..."
@@ -179,7 +179,7 @@ const Contact = () => {
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
-                <p className="text-blue-100 text-lg leading-relaxed mb-8">
+                <p className="text-white/90 text-lg leading-relaxed mb-8">
                   I'm always excited to discuss new culinary opportunities, innovative projects, 
                   or collaborate on creating exceptional dining experiences. Whether you're looking 
                   for a passionate chef to join your team or want to discuss culinary consulting, 
@@ -190,14 +190,14 @@ const Contact = () => {
               {/* Contact Info Cards */}
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
-                  <Card key={index} className="bg-white/10 backdrop-blur-md border-blue-400/20 hover:bg-white/20 transition-all duration-300">
+                  <Card key={index} className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 transition-all duration-300">
                     <CardContent className="p-6">
                       <a href={info.link} className="flex items-center group">
-                        <div className="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center mr-4 group-hover:bg-blue-700 transition-colors">
-                          <info.icon className="h-6 w-6 text-white" />
+                        <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center mr-4 group-hover:bg-accent/80 transition-colors">
+                          <info.icon className="h-6 w-6 text-accent-foreground" />
                         </div>
                         <div>
-                          <p className="text-sm text-blue-200">{info.label}</p>
+                          <p className="text-sm text-white/70">{info.label}</p>
                           <p className="text-lg font-medium">{info.value}</p>
                         </div>
                       </a>
@@ -216,7 +216,7 @@ const Contact = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all duration-300 ${social.color}`}
+                      className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110 transform"
                     >
                       <social.icon className="h-6 w-6" />
                     </a>
@@ -225,27 +225,27 @@ const Contact = () => {
               </div>
 
               {/* Availability */}
-              <Card className="bg-green-500/20 border-green-400/30">
+              <Card className="bg-accent/20 border-accent/30">
                 <CardContent className="p-6">
                   <div className="flex items-center">
-                    <div className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></div>
+                    <div className="w-3 h-3 bg-accent rounded-full mr-3 animate-pulse"></div>
                     <div>
                       <p className="font-medium">Open to new opportunities</p>
-                      <p className="text-sm text-blue-200">Currently serving at Viewline Resort Snowmass</p>
+                      <p className="text-sm text-white/70">Currently serving at Viewline Resort Snowmass</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
               {/* Professional Quote */}
-              <Card className="bg-blue-800/50 border-blue-600/30">
+              <Card className="bg-secondary/20 border-secondary/30">
                 <CardContent className="p-6">
                   <blockquote className="text-center">
-                    <p className="text-blue-100 italic mb-4">
+                    <p className="text-white/90 italic mb-4">
                       "I am able to work under pressure, adapt quickly to the requirements of the business. 
                       As a hardworking and results oriented individual who takes pride in her work..."
                     </p>
-                    <footer className="text-sm text-blue-300 font-medium">
+                    <footer className="text-sm text-white/70 font-medium">
                       Professional Philosophy
                     </footer>
                   </blockquote>

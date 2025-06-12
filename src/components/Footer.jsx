@@ -8,23 +8,23 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-blue-950 text-white py-12">
+    <footer className="bg-foreground text-background py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             {/* Back to Top Button */}
             <button
               onClick={scrollToTop}
-              className="inline-flex items-center justify-center w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-full mb-8 transition-colors duration-300"
+              className="inline-flex items-center justify-center w-12 h-12 bg-primary hover:bg-secondary rounded-full mb-8 transition-all duration-300 hover:scale-110 transform"
             >
-              <ArrowUp className="h-6 w-6" />
+              <ArrowUp className="h-6 w-6 text-white" />
             </button>
 
             {/* Logo/Name */}
             <h3 className="text-2xl font-bold mb-4">Maheshwar Vardolu</h3>
             
             {/* Tagline */}
-            <p className="text-blue-200 mb-8 max-w-md mx-auto">
+            <p className="text-muted mb-8 max-w-md mx-auto">
               Passionate Chef | Cooking with Heart, Leading with Soul
             </p>
 
@@ -34,7 +34,7 @@ const Footer = () => {
                 <a
                   key={link}
                   href={`#${link.toLowerCase()}`}
-                  className="text-blue-200 hover:text-white transition-colors duration-200"
+                  className="text-muted hover:text-secondary transition-colors duration-200"
                 >
                   {link}
                 </a>
@@ -42,10 +42,10 @@ const Footer = () => {
             </div>
 
             {/* Copyright */}
-            <div className="border-t border-blue-800 pt-8">
-              <p className="text-blue-300 flex items-center justify-center">
+            <div className="border-t border-muted pt-8">
+              <p className="text-muted flex items-center justify-center">
                 © 2024 Maheshwar Vardolu. Crafted with 
-                <Heart className="h-4 w-4 mx-1 text-red-500" />
+                <Heart className="h-4 w-4 mx-1 text-accent" />
                 and passion for culinary excellence
               </p>
             </div>
