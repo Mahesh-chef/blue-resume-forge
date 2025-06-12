@@ -1,123 +1,63 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Sunset Orange & Teal Design System */
-
 @layer base {
   :root {
-    --background: 254 253 247; /* #FFFDF7 off-white */
-    --foreground: 0 0 0; /* #000000 pure black for maximum contrast */
+    --background: 247 250 252; /* #F7FAFC */
+    --foreground: 26 32 44;    /* #1A202C */
 
-    --card: 255 255 255;
-    --card-foreground: 0 0 0; /* #000000 pure black */
+    --card: 255 255 255;       /* #FFFFFF */
+    --card-foreground: 26 32 44;
 
     --popover: 255 255 255;
-    --popover-foreground: 0 0 0; /* #000000 pure black */
+    --popover-foreground: 26 32 44;
 
-    --primary: 0 128 128; /* #008080 deep teal */
-    --primary-foreground: 255 255 255; /* White for button text */
+    --primary: 37 99 235;      /* #2563EB */
+    --primary-foreground: 255 255 255;
 
-    --secondary: 255 112 67; /* #FF7043 sunset orange */
-    --secondary-foreground: 0 0 0; /* #000000 pure black */
+    --secondary: 124 58 237;   /* #7C3AED */
+    --secondary-foreground: 255 255 255;
 
-    --muted: 249 246 242; /* #F9F6F2 light beige */
-    --muted-foreground: 17 17 17; /* #111111 very dark gray */
+    --muted: 229 231 235;      /* #E5E7EB */
+    --muted-foreground: 74 85 104; /* #4A5568 */
 
-    --accent: 255 209 220; /* #FFD1DC soft pink */
-    --accent-foreground: 0 0 0; /* #000000 pure black */
+    --accent: 16 185 129;      /* #10B981 */
+    --accent-foreground: 255 255 255;
 
-    --destructive: 239 68 68;
-    --destructive-foreground: 254 253 247;
+    --warning: 245 158 66;     /* #F59E42 */
+    --danger: 239 68 68;       /* #EF4444 */
 
-    --border: 226 232 240; /* #E2E8F0 - light border for separation */
-    --input: 226 232 240;
-    --ring: 0 128 128; /* teal */
+    --border: 229 231 235;     /* #E5E7EB */
+    --input: 229 231 235;
+    --ring: 37 99 235;         /* #2563EB */
 
     --radius: 0.75rem;
-
-    /* Custom gradient variables */
-    --sunset-gradient: linear-gradient(135deg, #FF7043 0%, #008080 100%);
-    --teal-gradient: linear-gradient(135deg, #008080 0%, #20B2AA 100%);
   }
 
   .dark {
-    --background: 34 40 49;
-    --foreground: 254 253 247;
+    --background: 26 32 44;    /* #1A202C */
+    --foreground: 247 250 252; /* #F7FAFC */
 
-    --card: 51 65 85;
-    --card-foreground: 254 253 247;
+    --card: 30 41 59;          /* #1E293B */
+    --card-foreground: 247 250 252;
 
-    --popover: 51 65 85;
-    --popover-foreground: 254 253 247;
+    --popover: 30 41 59;
+    --popover-foreground: 247 250 252;
 
-    --primary: 32 178 170;
-    --primary-foreground: 34 40 49;
+    --primary: 59 130 246;     /* #3B82F6 */
+    --primary-foreground: 26 32 44;
 
-    --secondary: 255 138 101;
-    --secondary-foreground: 34 40 49;
+    --secondary: 139 92 246;   /* #8B5CF6 */
+    --secondary-foreground: 26 32 44;
 
-    --muted: 71 85 105;
-    --muted-foreground: 148 163 184;
+    --muted: 55 65 81;         /* #374151 */
+    --muted-foreground: 156 163 175; /* #9CA3AF */
 
-    --accent: 255 182 193;
-    --accent-foreground: 34 40 49;
+    --accent: 52 211 153;      /* #34D399 */
+    --accent-foreground: 26 32 44;
 
-    --destructive: 239 68 68;
-    --destructive-foreground: 254 253 247;
+    --warning: 251 191 36;     /* #FBBF24 */
+    --danger: 239 68 68;       /* #EF4444 */
 
-    --border: 71 85 105;
-    --input: 71 85 105;
-    --ring: 32 178 170;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground font-sans;
-    font-feature-settings: "rlig" 1, "calt" 1;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
-@layer components {
-  /* Elegant button styles for clear visibility */
-  .btn-primary {
-    @apply bg-primary text-primary-foreground font-semibold py-2 px-4 rounded-[var(--radius)] shadow transition-colors duration-200;
-  }
-  .btn-primary:hover {
-    @apply bg-secondary text-secondary-foreground;
-  }
-  .btn-secondary {
-    @apply bg-secondary text-secondary-foreground font-semibold py-2 px-4 rounded-[var(--radius)] shadow transition-colors duration-200;
-  }
-  .btn-secondary:hover {
-    @apply bg-primary text-primary-foreground;
-  }
-}
-
-@layer utilities {
-  .bg-sunset-gradient {
-    background: var(--sunset-gradient);
-  }
-  
-  .bg-teal-gradient {
-    background: var(--teal-gradient);
-  }
-  
-  .text-gradient {
-    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
-  }
-  
-  /* For enhanced contrast on images or elements, if needed */
-  .contrast-high {
-    @apply filter contrast-150;
+    --border: 55 65 81;        /* #374151 */
+    --input: 55 65 81;
+    --ring: 59 130 246;        /* #3B82F6 */
   }
 }
