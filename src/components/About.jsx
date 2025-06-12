@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { ChefHat, Users, Award, Zap } from 'lucide-react';
@@ -97,9 +96,9 @@ const About = () => {
             {/* Right Content - Highlights Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {highlights.map((item, index) => (
-                <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-primary/20 hover:border-primary/40">
+                <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-primary/20 hover:border-primary/40 bg-card text-card-foreground">
                   <CardContent className="p-6 text-center">
-                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-sunset-gradient flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <item.icon className="h-8 w-8 text-white" />
                     </div>
                     <h4 className="text-lg font-semibold text-foreground mb-2">{item.title}</h4>
