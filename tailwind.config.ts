@@ -54,6 +54,49 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				// Extended sunset orange & teal palette
+				extend: {
+  colors: {
+    // ...existing
+    blue: {
+      50: '#eff6ff',
+      100: '#dbeafe',
+      200: '#bfdbfe',
+      300: '#93c5fd',
+      400: '#60a5fa',
+      500: '#2563EB', // market blue
+      600: '#1d4ed8',
+      700: '#1e40af',
+      800: '#1e3a8a',
+      900: '#172554',
+    },
+    emerald: {
+      50: '#ecfdf5',
+      100: '#d1fae5',
+      200: '#a7f3d0',
+      300: '#6ee7b7',
+      400: '#34d399',
+      500: '#10B981',
+      600: '#059669',
+      700: '#047857',
+      800: '#065f46',
+      900: '#064e3b',
+    },
+    violet: {
+      50: '#f5f3ff',
+      100: '#ede9fe',
+      200: '#ddd6fe',
+      300: '#c4b5fd',
+      400: '#a78bfa',
+      500: '#7C3AED',
+      600: '#6d28d9',
+      700: '#5b21b6',
+      800: '#4c1d95',
+      900: '#3b0764',
+    }
+  },
+  // ...rest unchanged
+}
+
 				orange: {
 					50: '#fff7ed',
 					100: '#ffedd5',
