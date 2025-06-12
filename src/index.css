@@ -1,66 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
-    --background: 247 250 252; /* #F7FAFC */
-    --foreground: 26 32 44;    /* #1A202C */
+    --background: 247 250 252;         /* #F7FAFC */
+    --foreground: 26 32 44;            /* #1A202C */
 
-    --card: 255 255 255;       /* #FFFFFF */
-    --card-foreground: 26 32 44;
+    --card: 255 255 255;               /* #FFFFFF */
+    --card-foreground: 26 32 44;       /* #1A202C */
 
     --popover: 255 255 255;
     --popover-foreground: 26 32 44;
 
-    --primary: 37 99 235;      /* #2563EB */
-    --primary-foreground: 255 255 255;
+    --primary: 37 99 235;              /* #2563EB */
+    --primary-foreground: 255 255 255; /* #FFFFFF */
 
-    --secondary: 124 58 237;   /* #7C3AED */
+    --secondary: 124 58 237;           /* #7C3AED */
     --secondary-foreground: 255 255 255;
 
-    --muted: 229 231 235;      /* #E5E7EB */
-    --muted-foreground: 74 85 104; /* #4A5568 */
+    --muted: 229 231 235;              /* #E5E7EB */
+    --muted-foreground: 74 85 104;     /* #4A5568 */
 
-    --accent: 16 185 129;      /* #10B981 */
+    --accent: 16 185 129;              /* #10B981 */
     --accent-foreground: 255 255 255;
 
-    --warning: 245 158 66;     /* #F59E42 */
-    --danger: 239 68 68;       /* #EF4444 */
+    --warning: 245 158 66;             /* #F59E42 */
+    --danger: 239 68 68;               /* #EF4444 */
 
-    --border: 229 231 235;     /* #E5E7EB */
+    --border: 229 231 235;             /* #E5E7EB */
     --input: 229 231 235;
-    --ring: 37 99 235;         /* #2563EB */
+    --ring: 37 99 235;                 /* #2563EB */
 
     --radius: 0.75rem;
   }
 
   .dark {
-    --background: 26 32 44;    /* #1A202C */
-    --foreground: 247 250 252; /* #F7FAFC */
+    --background: 26 32 44;            /* #1A202C */
+    --foreground: 247 250 252;         /* #F7FAFC */
 
-    --card: 30 41 59;          /* #1E293B */
+    --card: 30 41 59;                  /* #1E293B */
     --card-foreground: 247 250 252;
 
     --popover: 30 41 59;
     --popover-foreground: 247 250 252;
 
-    --primary: 59 130 246;     /* #3B82F6 */
+    --primary: 59 130 246;             /* #3B82F6 */
     --primary-foreground: 26 32 44;
 
-    --secondary: 139 92 246;   /* #8B5CF6 */
+    --secondary: 139 92 246;           /* #8B5CF6 */
     --secondary-foreground: 26 32 44;
 
-    --muted: 55 65 81;         /* #374151 */
-    --muted-foreground: 156 163 175; /* #9CA3AF */
+    --muted: 55 65 81;                 /* #374151 */
+    --muted-foreground: 156 163 175;   /* #9CA3AF */
 
-    --accent: 52 211 153;      /* #34D399 */
+    --accent: 52 211 153;              /* #34D399 */
     --accent-foreground: 26 32 44;
 
-    --warning: 251 191 36;     /* #FBBF24 */
-    --danger: 239 68 68;       /* #EF4444 */
+    --warning: 251 191 36;             /* #FBBF24 */
+    --danger: 239 68 68;               /* #EF4444 */
 
-    --border: 55 65 81;        /* #374151 */
+    --border: 55 65 81;                /* #374151 */
     --input: 55 65 81;
-    --ring: 59 130 246;        /* #3B82F6 */
+    --ring: 59 130 246;                /* #3B82F6 */
   }
 }
