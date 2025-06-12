@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Heart, ArrowUp } from 'lucide-react';
 
@@ -15,16 +14,16 @@ const Footer = () => {
             {/* Back to Top Button */}
             <button
               onClick={scrollToTop}
-              className="inline-flex items-center justify-center w-12 h-12 bg-primary hover:bg-secondary rounded-full mb-8 transition-all duration-300 hover:scale-110 transform"
+              className="inline-flex items-center justify-center w-12 h-12 bg-primary hover:bg-secondary text-primary-foreground hover:text-secondary-foreground rounded-full mb-8 transition-all duration-300 hover:scale-110 transform"
             >
-              <ArrowUp className="h-6 w-6 text-white" />
+              <ArrowUp className="h-6 w-6" />
             </button>
 
             {/* Logo/Name */}
-            <h3 className="text-2xl font-bold mb-4">Maheshwar Vardolu</h3>
+            <h3 className="text-2xl font-bold mb-4 text-foreground">Maheshwar Vardolu</h3>
             
             {/* Tagline */}
-            <p className="text-muted mb-8 max-w-md mx-auto">
+            <p className="text-muted-foreground mb-8 max-w-md mx-auto">
               Passionate Chef | Cooking with Heart, Leading with Soul
             </p>
 
@@ -34,7 +33,7 @@ const Footer = () => {
                 <a
                   key={link}
                   href={`#${link.toLowerCase()}`}
-                  className="text-muted hover:text-secondary transition-colors duration-200"
+                  className="text-muted-foreground hover:text-secondary transition-colors duration-200"
                 >
                   {link}
                 </a>
@@ -43,7 +42,7 @@ const Footer = () => {
 
             {/* Copyright */}
             <div className="border-t border-muted pt-8">
-              <p className="text-muted flex items-center justify-center">
+              <p className="text-muted-foreground flex items-center justify-center">
                 © 2024 Maheshwar Vardolu. Crafted with 
                 <Heart className="h-4 w-4 mx-1 text-accent" />
                 and passion for culinary excellence
